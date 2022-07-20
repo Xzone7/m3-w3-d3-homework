@@ -1,0 +1,9 @@
+/* Nest Nav */
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  color: white; }
+  header nav ul li {
+    margin-right: 5px; }
+  header nav ul a {
+    color: white; }

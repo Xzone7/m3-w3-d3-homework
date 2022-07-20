@@ -1,0 +1,26 @@
+{
+  "name": "m3-w3-d3-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -o css/ scss/",
+    "start": "npm run watch:scss",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'scss/*.scss' -- npm run scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xzone7/m3-w3-d3-homework.git"
+  },
+  "author": "Xu Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xzone7/m3-w3-d3-homework/issues"
+  },
+  "homepage": "https://github.com/Xzone7/m3-w3-d3-homework#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "onchange": "^3.0.0"
+  }
+}

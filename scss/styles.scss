@@ -1,0 +1,65 @@
+@import "colors.scss";
+@import "nav.scss";
+
+/* Variables */
+$font-1: Arial, Helvtica, Sans-Serif;
+$font-2: 'Sacramento', cursive;
+
+@mixin flex-style($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+/* Nest Main */
+body {
+    background-color: $color-yellow;
+    box-sizing: border-box;
+}
+
+main {
+    min-height:535px;
+    background-color: $color-white;
+    padding: 20px;
+    @include flex-style(row);
+
+    #intro-text {
+        background-color: $color-gray;
+        height: 770px;
+        @include flex-style(column);
+        padding: 0 5px;
+
+        span {
+            display: block;
+            font-family: $font-2;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-family: $font-1;
+            font-size: 30px;
+        }
+
+        p {
+            font-family: $font-1;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+    }
+}
+
+footer {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+// Mixin or Extend for button
+button {
+    @extend body;
+    display: block;
+    color: $color-white;
+    border: none;
+    padding: 10px;
+}

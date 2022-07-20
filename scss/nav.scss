@@ -1,0 +1,20 @@
+@import "colors.scss";
+
+/* Nest Nav */
+header {
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      color: $color-white;
+
+      li {
+        margin-right: 5px;
+      }
+
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}
